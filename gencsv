@@ -1,0 +1,6 @@
+#generate each row of data
+echo Size ,Run{1..20}
+for num in {1000..9500..500} ;do
+     printf "$num"
+     bash genrow "$num"
+done

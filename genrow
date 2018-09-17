@@ -1,0 +1,6 @@
+#generate each row of data
+
+for f in data/"$1"-*.dat ;do
+     cat "$f" | make run 2>/dev/null | tr '|' ','
+done
+echo
